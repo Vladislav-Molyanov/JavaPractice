@@ -1,0 +1,6 @@
+февр. 06, 2023 8:50:44 PM homeworkTwo.firstProgram createLogInfo
+INFO: Элемент 4 перемещен на позицию 3
+февр. 06, 2023 8:50:44 PM homeworkTwo.firstProgram createLogInfo
+INFO: Элемент 3 перемещен на позицию 4
+февр. 06, 2023 8:50:44 PM homeworkTwo.firstProgram createLogInfo
+INFO: Элемент 4 перемещен на позицию 4
