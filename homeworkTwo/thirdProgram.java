@@ -36,16 +36,15 @@ public class thirdProgram {
     }
     static String parsStrFromDictionary(String str){
         StringBuilder sb = new StringBuilder();
-        str = str.substring(1, str.length()-1);//убираем [ вначале и ] в конце
-        String[] strArr = str.split(", ");//получаем массив, элем в котором имеют вид {"ключ":"значение", "ключ":
-        // "значение", "ключ":"значение"}
+        str = str.substring(1, str.length()-1);
+        String[] strArr = str.split(", ");
         for (String el : strArr){
             sb.append(String.join(",", parsStr(el)));
             sb.append(",");
         }
-        return sb.toString();//получаем строку вида Иванов,5,Математика,Петрова,4,Информатика,Краснов,5,Физика,
+        return sb.toString();
     }
-    static String getResultArray(String str){//Студент Иванов получил 5 по предмету Математика.
+    static String getResultArray(String str){
         StringBuilder sb = new StringBuilder();
         String[] arr = str.split(",");
         for (int i = 0; i <arr.length ; i+=3) {
