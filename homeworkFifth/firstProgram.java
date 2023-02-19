@@ -13,8 +13,8 @@ public class firstProgram {
         while (true) {
             try {
                 System.out.println("\n      Телефонная книга.");
-                System.out.println("Команды: 1 - добавить контакт или обновить; 2 - удалить контакт; 3 - найти контакт;");
-                System.out.println("         4 - вывести на печать всю телефонную книгу;");
+                System.out.println("Команды: 1 - добавить контакт ; 2 - удалить контакт; 3 - найти контакт;");
+                System.out.println("         4 - вывести всю телефонную книгу;");
                 System.out.println("         5 - очистить всю книгу; 6 - выход из программы.");
                 System.out.print("Введите команду для работы с телефонной книгой: ");
                 int command = input.nextInt();
@@ -36,7 +36,7 @@ public class firstProgram {
                     break;
                 }
             } catch (Exception ex) {
-                System.out.println("Ошибка. Введена не цифровая команда. Начните заново.");
+                System.out.println("Ошибка. Команда введена некорректно.");
                 break;
             }    
         }
@@ -44,8 +44,8 @@ public class firstProgram {
 
     // Добавить контакт или обновить
     private static void addContakt(HashMap<String, List<String>> phBook) {
-        System.out.println("\nКоманда добавить контакт или обновить. ");
-        System.out.println("  Введите фамилию (и/или) имя контакта: ");
+        System.out.println("\nДобавить контакт. ");
+        System.out.println("  Введите фамилию и имя контакта: ");
         String name = input.nextLine();
         System.out.println("  Введите номер или номера телефонов через пробел: ");
         String numberPhone = input.nextLine();
@@ -63,7 +63,7 @@ public class firstProgram {
     // Удалить контакт
     private static void dellContakt(HashMap<String, List<String>> phBook) {
         System.out.println("\nКоманда удаления контакта. ");
-        System.out.println("  Введите фамилию (и/или) имя контакта: ");
+        System.out.println("  Введите фамилию и имя контакта: ");
         String name = input.nextLine();
 
         if (phBook.containsKey(name)) {
@@ -77,7 +77,7 @@ public class firstProgram {
     // Найти контакт
     private static void findContakt (HashMap<String, List<String>> phBook) {
         System.out.println("\nКоманда поиска списка телефонов по имени.");
-        System.out.println("  Введите фамилию (и/или) имя контакта: ");
+        System.out.println("  Введите фамилию и имя контакта: ");
         String name = input.nextLine();
 
         if (phBook.containsKey(name)) {
